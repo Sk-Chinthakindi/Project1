@@ -1,0 +1,24 @@
+<form action=action_page.php method="get">
+<fieldset>
+<legend> Personal Information</legend>
+Username:<input type="text" name="first-name" id="first-name" required size="10" placeholder="enter your name"><br>
+Lastname:<input id="lname" type="text" maxlength="10 " onblur="myFunction()"><br>
+Enter a number: <input type=number min="1" max="4">
+<input type="Submit" onclick="alert('Form has been submitted')" formnovalidate formmethod="post" formaction="action_pag2.php">
+<input type="Reset" >
+
+<input type="button" value="Click Me" >
+</fieldset>
+<fieldset>>
+	<legend> Contact Information</legend>
+	Phone Number : <input type=text>
+	
+</fieldset>
+</form>
+<script>
+function myFunction() {
+    var x = document.getElementById("lname");
+    x.value = x.value.toUpperCase();
+}
+</script>
+attached to url information become visible 
